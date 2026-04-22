@@ -2,5 +2,69 @@
   "sucesso": {
     "id": 1,
     "status": "SUCCESS"
+  },
+  "restfulBooker": {
+    "baseUrl": "https://restful-booker.herokuapp.com",
+    "auth": {
+      "username": "admin",
+      "password": "password123",
+      "invalidPassword": "invalid-password"
+    },
+    "booking": {
+      "firstname": "Alex",
+      "lastname": "Nabo",
+      "totalprice": 150,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2026-05-01",
+        "checkout": "2026-05-10"
+      },
+      "additionalneeds": "Breakfast"
+    },
+    "bookingUpdate": {
+      "firstname": "Alex Updated",
+      "lastname": "Nabo Updated",
+      "totalprice": 200,
+      "depositpaid": false,
+      "bookingdates": {
+        "checkin": "2026-06-01",
+        "checkout": "2026-06-10"
+      },
+      "additionalneeds": "Lunch"
+    },
+    "bookingPatch": {
+      "firstname": "Alex Patch",
+      "additionalneeds": "Late Checkout"
+    }
+  },
+  "dummyJson": {
+    "baseUrl": "https://dummyjson.com",
+    "queries": {
+      "productsLimit": 5,
+      "searchTerm": "phone",
+      "usersLimit": 3,
+      "postsLimit": 3,
+      "cartsLimit": 3
+    },
+    "auth": {
+      "username": "kminchelle",
+      "password": "0lelplR"
+    },
+    "newProduct": {
+      "title": "QA Product",
+      "description": "Produto criado para validar endpoint de adição",
+      "price": 99,
+      "brand": "QA Brand",
+      "category": "beauty"
+    }
+  },
+  "goRest": {
+    "baseUrl": "https://gorest.co.in/public/v2",
+    "queries": {
+      "page": 1,
+      "perPage": 5,
+      "gender": "male",
+      "status": "active"
+    }
   }
 }
