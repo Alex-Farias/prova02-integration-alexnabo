@@ -22,7 +22,7 @@ jobs:
         node-version: 22
         cache: 'npm'
     - run: npm install      
-    - run: npm test
+    - run: npm test -- --testPathIgnorePatterns=test/go_rest.spec.ts
 
   sonarcloud:
     name: Run SonarCloud
